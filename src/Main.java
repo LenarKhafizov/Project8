@@ -10,7 +10,9 @@ public class Main {
         people.add((new Person("Игорь", "Мари Соли Боярт", 15)));
         people.add((new Person("Алексей", "Шувалов", 18)));
         people.add((new Person("Антон", "Андре Себастьян Жардье", 18)));
-        Collections.sort(people, new PersonSurnameComparator());
+        Collections.sort(people, new PersonSurnameComparator(1));
+        System.out.println(people);
+        Collections.sort(people, new PersonSurnameComparator(2));
         System.out.println(people);
 
     }
